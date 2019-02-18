@@ -773,7 +773,7 @@ static void novacom_spawn_shell(device_handle_t device_handle, int channel, cons
 			log_printf(LOG_ERROR, "Error calling sched_setscheduler(): %d\n", rc);
 		}
 		/* Higher then your average process */
-		setpriority(PRIO_PROCESS, 0, -1);
+		// setpriority(PRIO_PROCESS, 0, -1);
 
 		/* environment (inherited from current user) */
 		uid = getuid();
@@ -916,7 +916,7 @@ static void novacom_spawn_process(device_handle_t device_handle, int channel, co
 			log_printf(LOG_ERROR, "Error calling sched_setscheduler(): %d\n", rc);
 		}
 		/* Higher then your average process */
-		setpriority(PRIO_PROCESS, 0, -1);
+		// setpriority(PRIO_PROCESS, 0, -1);
 
 		if( 0 == chdir("/") ) {
 			execv(path, (void *)execargs);

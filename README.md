@@ -1,6 +1,14 @@
 novacomd
 ========
 
+This build of novacomd is for armhf (raspberry Pi 3!)
+
+Requires libusb-dev
+
+To build:
+
+make host && mv build-novacom-host /usr/local/webos/usr/sbin/novacomd (or whatever your preferred install location is in your $PATH)
+
 novacomd runs as a daemon or service on the host and the device
 
 # Copyright and License Information
