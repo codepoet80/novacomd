@@ -1,23 +1,19 @@
 novacomd
 ========
 
-This build of novacomd is for armhf (raspberry Pi 3!)
+This build of novacomd compiles on macOS, which allows it to run on Macs that no longer support 32-bit binaries. Tested on Big Sur 11.0.1, GNU Make 3.81
 
-Before building:
+Before building, you need the libusb-compat library. The easiest way to install it is via Homebrew:
 
-> sudo apt-get install libusb-dev
+> brew install libusb-compat
 
 To build:
 
 > make host
 
-To install:
+To install, copy `build-novacomd-host/novacomd` to the `/bin` directory of your Palm SDK install (usually `/opt/nova/bin`).
 
-> sudo mv build-novacomd-host /YOUR/LOCATION/HERE (may not require "sudo" depending on location)
-
-novacomd runs as a daemon or service on the host and the device
-
-![In Action](https://i.imgur.com/GUqOYEp.png)
+Thanks to [NotAlexNoyle](https://github.com/NotAlexNoyle/novacomd) for doing the USB compatibility legwork.
 
 # Copyright and License Information
 
