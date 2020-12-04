@@ -62,7 +62,7 @@ DEVICELD := arm-none-linux-gnueabi-ld
 endif
 
 
-ifeq ($(UNAME),Linux)
+ifeq ($(UNAME), $(filter $(UNAME), Linux Darwin))
 LDFLAGS += -Wl,-rpath,. # add the local path to the program's search path
 HOSTLDLIBS += -lpthread -lusb
 HOSTPLATFORM := pthreads
