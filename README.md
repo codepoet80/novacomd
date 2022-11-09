@@ -13,6 +13,9 @@ To build:
 
 To install, copy `build-novacomd-host/novacomd` to the `/bin` directory of your Palm SDK install (usually `/opt/nova/bin`).
 
+For more detailed, step-by-step instructions for installation on both Intel and Apple Silicon machines, please see the webOS Archive Docs:
+[https://docs.webosarchive.org/macos-install/](https://docs.webosarchive.org/macos-install/)
+
 Thanks to [NotAlexNoyle](https://github.com/NotAlexNoyle/novacomd) for doing the USB compatibility legwork.
 
 # Copyright and License Information
